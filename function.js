@@ -98,7 +98,17 @@ if(b%2===0){
     document.write("this is odd")
 }*/
 
-//4. Write a program in javascript to print all perfect numbers in a given range using the function
+//4. Write a program in javascript to print all perfect numbers in a given range using the function.
+
+function perfectNum(){
+    sumPerfectNum=0;
+    for(let i=0; i<=14; i++){
+        if(i%2==0){
+            document.write(i)
+        }
+    }
+}
+perfectNum();
 //5. Write a program in javascript to print sum of all  numbers in a given range using the function.
 
 /*function sum(){
@@ -174,7 +184,7 @@ sumOdd();*/
     }
 }
 sumOdd(0);*/
-
+/*
 function sumOdd(sumOdd){
     //sumOdd = 0;
     for(let i=1; i<=10; i=i+2){
@@ -183,5 +193,5 @@ function sumOdd(sumOdd){
     }
     return sumOdd;
 }
-document.write(sumOdd(0));
+document.write(sumOdd(0));*/
 

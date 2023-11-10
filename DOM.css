@@ -1,0 +1,39 @@
+.demo{
+ height: 25vh;
+ width: 20%;
+ margin-left: 4%;
+ background-color: blueviolet;
+ float: left;
+}
+.demo1{
+ height: 25vh;
+ width: 20%;
+ margin-left: 4%;
+ background-color: blueviolet;
+ float: left;
+}
+button{
+ position: relative;
+ top: 10vh;
+ left: 45%;
+ height: 40px;
+ width: 150px;
+}
+h1{
+ text-align: center;
+ padding-top: 15%;
+}
+h2,h3,h4{
+ text-align: center;
+}
+.items{
+ height: 30vh;
+ width: 100%;
+ position: relative;
+ top: 15vh;
+ background-color: cadetblue;
+}
+ul{
+ list-style: none;
+ display: flex;
+}

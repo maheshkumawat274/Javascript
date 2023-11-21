@@ -8,21 +8,28 @@
     
 </head>
 <body>
+    1st Number : <input type="text" id="num1"><br><br>
+    2nd Number : <input type="text" id="num2"><br><br>
+    <button onclick="mul()">Multiply</button> <button onclick="divide()">Divide</button><br><br>
+    <p id="demo"></p>
     <script>
-       /* var string1 = "123";
-        var intvalue = 123;
-        alert(string1 + intvalue);*/
-        /*function output(Option){
-            return (Option ? "yes": "no")
-        }
-        var ans = true;
-        console.log(Option(ans));*/
-        var a =7;
-        var b = 12;
-        var c =a;
-        a=b;
-        a = b+c;
-        document.write("value of the a ",a);
-    </script>
+      
+      function mul(){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var result = parseFloat(num1 * num2);
+        document.getElementById('demo').innerHTML=result;
+        
+      }
+      function divide(){
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var result = parseFloat(num1 / num2);
+        document.getElementById('demo').innerHTML=result;
+        
+      }
+    
+   
+  </script>
 </body>
 </html>

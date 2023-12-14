@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset='utf-8'>
+ <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+ <title>try and catch</title>
+ <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+</head>
+<body>
+ <script>
+  try{
+   var a = 2;
+   if(a==2){
+    document.write("ok")
+   }
+   else{
+    document.write("not ok")
+   }
+  }
+  catch(error){
+   document.write("error found"+error.message);
+  }
+  finally{
+   document.write("value of a is 2")
+  }
+ </script>
+</body>
+</html>

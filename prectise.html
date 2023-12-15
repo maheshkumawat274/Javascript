@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Image Print</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <h1 id="nk">Mahesh Kumawat</h1>
+    <h1 id="mkkk">Neetu Kumawat</h1>
+    <button id="mk">Click me</button>
+    
+    <script>
+        document.getElementById("mk").onclick=function(){
+            //alert("maehshf");
+            //document.getElementById("nk").innerHTML="mk";
+            /*var x = document.getElementById("nk");
+            for(let i=0; i<20; i++){
+                document.body.appendChild(x.cloneNode(true));
+            }*/
+            //var mk = document.getElementById('nk');
+            //var mkk = document.getElementById('mkkk');
+            var mk = [
+                "mahesh",
+                "prince",
+                "rajesh",
+                "babu sona",
+                "tina"
+            ]
+            for(let i=0; i<10; i++){
+                const Image =mk.cloneNode(true);
+                document.body.appendChild(Image);
+            }
+            
+
+        }
+    </script>
+</body>
+</html>

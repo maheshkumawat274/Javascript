@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy to Clipboard</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <button id="btn">Copy</button>
+
+    <script>
+        
+        document.getElementById("btn").addEventListener("click",function(){
+         var a = document.getElementById("text").value;
+         var b = document.createElement("textarea");
+         b.textContent = a;
+         document.body.appendChild(b);
+         b.select();
+         document.execCommand("copy");
+         b.remove();
+         alert("Copy text : "+ a)
+        })
+
+
+    </script>
+
+</body>
+</html>
